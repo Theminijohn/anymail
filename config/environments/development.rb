@@ -32,6 +32,18 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
-  # Raises error for missing translations
-  # config.action_view.raise_on_missing_translations = true
+  # Mandrill
+  config.action_mailer.smtp_settings = {
+    :address   => "smtp.mandrillapp.com",
+    :port      => 25, # ports 587 and 2525 are also supported with STARTTLS
+    :enable_starttls_auto => true,
+    :user_name => "minijohn@anyroad.com",
+    :password  => "gspoGuW-dBAJwPj-Jqdpdw",
+    :authentication => 'login',
+    :domain => 'heroku.com',
+  }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+
 end
