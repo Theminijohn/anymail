@@ -1,0 +1,11 @@
+-# Header
+.panel.panel-primary
+  .panel-heading
+    Send a Simple Message
+  .panel-body
+    -# Form
+    = form_tag '#', multipart: true
+    .input-group
+      = text_field_tag(:to_address, "",class: 'input form-control', placeholder: "Email Address", 'required' => true)
+      %span.input-group-btn
+        %button.btn.btn-primary{type: "submit"} Send!

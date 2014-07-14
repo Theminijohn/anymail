@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/Theminijohn/mandrill_mailer.git
+  revision: 4ef13c04044c0088abd5f48e8691418bdb5ed4a7
+  specs:
+    mandrill_mailer (0.4.6)
+      actionpack
+      activesupport
+      mandrill-api (~> 1.0.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -261,6 +270,7 @@ DEPENDENCIES
   jquery-turbolinks
   launchy (~> 2.4.2)
   mandrill-api (~> 1.0.52)
+  mandrill_mailer!
   pg
   pry (~> 0.10.0)
   quiet_assets

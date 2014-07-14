@@ -21,6 +21,7 @@ gem 'autoprefixer-rails'
 
 # Email Clients
 gem 'mandrill-api', '~> 1.0.52'
+gem 'mandrill_mailer', git: 'https://github.com/Theminijohn/mandrill_mailer.git'
 
 group :development, :test do
   gem 'spring'

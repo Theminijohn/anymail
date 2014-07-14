@@ -1,0 +1,15 @@
+%nav.navbar.navbar-static-top.navbar-default{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".anymail-nav", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'AnyMail', root_path, class: "navbar-brand"
+
+    .collapse.navbar-collapse.anymail-nav
+      %ul.nav.navbar-nav.navbar-right
+        %li= link_to 'Send me Stuff', send_path
+        %li= link_to "Home", root_path
+

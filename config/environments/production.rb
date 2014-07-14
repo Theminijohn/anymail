@@ -59,4 +59,6 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'heroku.com' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
+
+  config.mandrill_mailer.default_url_options = { :host => 'heroku.com' }
 end
