@@ -1,2 +1,5 @@
-%h1 SendMeStuff#home
-%p Find me in app/views/send_me_stuff/home.html.haml
+.center
+  .panel.panel-default
+    .panel-body
+      %h3  SimpleMailer.invite('your@email.com').deliver
+      %p Should send an email to specified Email address
